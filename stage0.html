@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <title>HTML ONLINE</title>
+    <meta charset="utf-8">
+<style>
+table,th,td {
+border : 1px solid black;
+border-collapse : collapse;}
+th, td {
+    padding:15px;
+}
+
+a{
+    text-decoration:none;
+    color:green;
+}
+
+ul {
+	list-style:none;  /* 불릿 없앰 */
+	}
+li {
+	margin:20px;  /* 각 항목간 마진 */
+	}
+li label {   
+			width:70px;   /* 레이블 너비 */
+		    float:left;  /* 왼쪽부터 시작 */
+			font-size:14px;  /* 글자 크기 */
+			font-weight:bold;  /* 글자 굵기 */
+			line-height:25px;  /* 줄간격 */
+		}
+
+</style>
+</head>
+<body>
+
+<!-- 삼겹살은 옳다 !!!-->
+<!--   <a href="label.html">로그인</a>          -->
+
+<h3>SIM의 모험</h3>
+
+<fieldset>
+<label for="life">목숨 갯수</label>
+<input type="number" min="1" max="9999" value="1" id="life" autofocus required>
+<input type="range" min="1" max="9999" value="1" id="life_bar">
+<input type="submit" value="setting">
+<br>
+<label for="chc">캐릭터색상</label>
+<input id="chc" type="color">
+<br>
+<label><input type="date" id="Start"></label>
+<label><input type="date" id="end"></label>
+<input type="file" >
+<label class="reg" for="subj">영어회화(초급)</label>
+<input type="text" id="subj" value="오전 9:00~11:00" readonly>
+<label class="reg" for="group">단체주문</label>
+<input type="number" id="group" value="10" min="10" max="100" step="10">
+<a href="stage1.html">주문하러가즈아</a>
+<br>
+<select>
+	<option>컴퓨터공학과</option>
+	<option>국문학과</option>
+	<option>철학과</option>
+</select>
+<br>
+<input type="text" id="interest" list="choices">
+<datalist id="choices">
+
+	<option value="grammar" label="문법"></option>
+	
+	<option value="voca" label="어휘"></option>
+	
+	<option value="news" label="뉴스청취"></option>
+</datalist>
+
+</datalist>
+
+<input type="submit" value="전송하기">
+<button type="submit">전송하기</button>
+
+
+
+</fieldset>
+
+<br>
+
+<p>계산을 해보즈아</p>
+<form oninput="result.value=parseInt(num1.value)+parseInt(num2.value)">
+	<input type="number" name="num1" value="0">
+	+<input type="number" name="num2" value="0">
+    =<output name="result" for="num"></output>
+
+</form>
+<ul>
+	<li>
+		<label>10초남음</label>
+		<progress value="50" max="60"></progress>
+	</li>
+</ul>
+
+</body>
+</html>

@@ -1,104 +1,71 @@
 <!doctype html>
 <html lang="ko">
 <head>
-    <title>온라인 프로필</title>
+    <title>HTML ONLINE</title>
     <meta charset="utf-8">
 <style>
+		@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic');
+		.gimotti {
+          font-family : 'Nanum Gothic' ,돋움;
+		  font-variant :small-caps;
+		  font-weight: bold;
+		}
+
 table,th,td {
 border : 1px solid black;
-border-collapse : collapse;}</style>
+border-collapse : collapse;}
 th, td {
     padding:15px;
 }
+
+a{
+    text-decoration:none;
+    color:green;
+}
+
+ul {
+	list-style:none;  /* 불릿 없앰 */
+	}
+li {
+	margin:20px;  /* 각 항목간 마진 */
+	}
+li label {   
+			width:70px;   /* 레이블 너비 */
+		    float:left;  /* 왼쪽부터 시작 */
+			font-size:14px;  /* 글자 크기 */
+			font-weight:bold;  /* 글자 굵기 */
+			line-height:25px;  /* 줄간격 */
+		}
+	
+</style>
 </head>
 <body>
 
 <!-- 삼겹살은 옳다 !!!-->
-<h1>GO GWANG CHEON</h1>
-<p>email : thousand419@naver.com</p>
-<h2>Who I am?</h2>
-<p>I'am a human in the earth</p>
-<hr>
-<h2>Skills</h2>
-<ul>
-    <li>사용 언어
-    <ul>
-        <li><mark>HTML</mark></li>
-        <li><mark>CSS</mark></li>
-        <li>JAVA</li>
-        <li>C</li>
-    </ul>
-    </li>
-    <li>사용툴
-<ul>
-<li>PHOTOSHOP</li>
-<li><b>Visual Studio</b></li>
-<li>Eclipse</li>
-</ul>
-    </li>
-</ul>
+<!--   <a href="label.html">로그인</a>          -->
 
+<h3>SIM의 모험</h3>
 
-<p id="summary">다음표가 잘못을 했습니까?</p>
-
-<figure>
-       
-<table border="1" aria-describedby="summary">
-<tr>
-    <th>이름</th>
-    <td></td>
-    <td>연락처</td>
-    <td></td>
-</tr>
-
-<tr>
-    <th>주소</th>
-    <td colspan="3"></td>
- </tr>
- <tr>
-     <th>자기소개</th>
-     <td colspan="3"></td>
- </tr>
-
-</table>
-<figcaption>
-    <p>국내에서 자주 사용하는 <b>모던 브라우저</b></p>
-</figcaption>
-
-</figure>
-
-
-<h2>Academic</h2>
-<table border="1">
-    <caption>학력 사항</caption>
-
-    <thead>
-        <tr>
-        <th>출신학교</th>
-        <th>전공</th>
-        <th>기간</th>
-        <th>졸업구분</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>원주고등학교</td>
-            <td>(소프트웨어학과)</td>
-            <td>2014~2018</td>
-            <td>고등학교졸업</td>
-        </tr>
-        <tr>
-            <td>강원대학교</td>
-            <td>배고픈학과</td>
-            <td>2004~2009</td>
-            <td>졸업하고싶음</td>
-
-        </tr>
-
-
-    </tbody>
-</table>
-
-
+	<form action="login.php" method="post">
+	<fieldset>
+		<legend>LogIn</legend>
+		<ul>
+			<li>
+				<label for="id">아이디</label>
+				<input type="text" id="id" placeholder="중복없이" autofocus required >
+			</li>
+			<li>
+				<label for="pw">비밀번호</label>
+				<input type="password" id="pw">
+			</li>
+			<li>				
+				<input type="submit" title="로그인" value="로그인">
+			</li>
+		</ul>
+	</fieldset>
+    </form>
+<br>
+<a href="stage0.html">모험을 떠납니다</a>
+<p class=gimotti>나만의 폰트로 가즈아 English 재밋서</p>
 </body>
 </html>
